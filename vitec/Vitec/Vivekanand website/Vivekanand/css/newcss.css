@@ -1,0 +1,316 @@
+html, body{
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    
+}
+
+
+
+.home-page-content{
+    color:white;
+    line-height: 2rem;
+    margin-left:71px;
+}
+
+#partner-logo-1, #partner-logo-4{
+    visibility: hidden;
+}
+
+.services-iconz{
+    position:relative;
+    top:10px;
+    margin-left: 8px;
+    
+    
+}
+
+#audev-home-image{
+    margin-left:50px;
+    position: relative;
+    left:20px;
+}
+
+
+#dummy-director1, #dummy-director2{
+    visibility: hidden;
+}
+
+.footer-row{
+    justify-content: center !important;
+    /* has already been made flex by existing css, so now we just made it justify content center  */
+    margin-left:20px;
+   
+   
+}
+
+.footer-container{
+    max-width: 99vw;
+    
+}
+
+.team-flex-row{
+    justify-content: center;
+    /* to display krishna sir a center */
+}
+
+.key-features-class{
+    margin-left:70px;
+    
+}
+
+.key-div{
+    width:350px;
+}
+
+.key-itemz{
+    border-radius: 10px;
+    transition-property: background-color color;
+    transition-duration: 0.2s;
+    margin-left: 9px;
+}
+
+.key-itemz:hover{
+    background-color: #16409E;
+    color: #fff;
+}
+
+.image-key-feat{
+    position: relative;
+    bottom:43px;
+    
+    
+}
+
+
+.width-management{
+    margin-left:70px;
+}
+
+
+
+
+
+.wrapper4 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.card4 {
+    max-width: 500px;
+    min-height: 100px;
+    background: #16409E;
+    padding: 30px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: white;
+    margin: 20px;
+    margin-top: -30px;
+
+}
+
+.card4:last-child {
+    background: #16409E;
+
+}
+
+.card-title4 {
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+
+.card-content4 {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+}
+
+
+
+
+
+.wrapper1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card1 {
+    max-width: 300px;
+    min-height: 150px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: #707070;
+    text-align: center;
+    margin: 20px;
+    box-shadow: rgb(50 50 93 / 25%) 0px 30px 60px -12px, rgb(0 0 0 / 30%) 0px 18px 36px -18px;
+    transition-property: background-color color;
+    transition-duration: 0.2s;
+}
+
+.card1:nth-child(2) {
+    background: #16409E;
+}
+
+.card1:last-child {
+    background: #fff;
+}
+
+.card-title1 {
+    margin-top: 0;
+    font-size: 42px;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+}
+
+.card-content1 {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+}
+
+.card1:hover {
+    color: #fff;
+    background: #16409E;
+}
+
+.card1:nth-child(2):hover {
+    color: #fff;
+    background: #16409E;
+}
+
+
+
+
+
+
+/* career start */
+
+.readme {
+    color: #fff;
+    margin: 0 auto;
+    width: 100%;
+    height: 200px;
+}
+
+.readme a {
+    color: #00a486;
+}
+
+.accordion {
+    position: relative;
+    margin: 30px auto;
+    width: 80%;
+
+}
+
+[id*="open-accordion"],
+[id*="close-accordion"] {
+    background: #16409E;
+
+    border-bottom: 1px solid #fff;
+    line-height: 90px;
+    height: 90px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    width: 99%;
+}
+
+[id*="close-accordion"] {
+    display: none;
+}
+
+.accordion a {
+    color: #fff;
+    font-size: 1.25em;
+    font-weight: normal;
+    padding-left: 2%;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+.target-fix {
+    display: block;
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+
+.accordion-content {
+    background: #fff;
+    height: 0;
+    margin: -1px auto 0;
+    padding: 0 2.5%;
+    position: relative;
+    overflow: hidden;
+    width: 90%;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+}
+
+.accordion span:target~.accordion-content {
+    display: block;
+    height: auto;
+    padding-bottom: 25px;
+    padding-top: 10px;
+}
+
+.accordion span:target~[id*="close-accordion"] {
+    display: block;
+}
+
+.accordion span:target~[id*="open-accordion"] {
+    display: none;
+}
+/* Career - end */
+
+/* Career apply button - start */
+.hellobutton {
+    border-radius: 4px;
+    border-color: #16409E;
+    width: 105px !important;
+    height: 45px !important;
+    background-color: #16409E;
+    color: #fff;
+    border: none;
+    outline: none;
+}
+
+.hellobutton:focus {
+
+    border: none;
+    outline: none;
+}
+
+/* career end */
+.flex-box1 {
+    display: flex;
+}
+
+
+#carit-id{
+    text-align: left;
+    width:80vw;
+    margin: 0px 0px 11px 82px;
+    font-size:25px;
+}
+
+
+.image-specs{
+    width:600px;
+    height: 260px;
+}
+
+
+#footer-kontent{
+    margin-left:0px;
+}
