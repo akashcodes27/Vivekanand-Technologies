@@ -313,4 +313,11 @@ html, body{
 
 #footer-kontent{
     margin-left:0px;
+    position: relative;
+    bottom:30px;
+}
+
+
+.experience-class{
+    margin-left:0px;
 }

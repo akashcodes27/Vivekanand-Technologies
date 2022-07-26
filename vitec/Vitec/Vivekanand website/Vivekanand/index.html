@@ -140,13 +140,15 @@
           </div>
           <div class="col-lg-3 col-md-4 col-xs-6" id="#partner-logo-2">
             <div class="client-logo">
-              <img src="images/Synergy logo.png" class="img-fluid" alt="" id="synergy-logo-id">
+              <a href="https://www.google.com" target="_blank"><img src="images/Synergy logo.png" class="img-fluid" alt="" id="synergy-logo-id" style="margin-left: 25px;"> </a>
+              
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4 col-xs-6" id="#partner-logo-3">
             <div class="client-logo">
-              <img src="images/image-1.webp" class="img-fluid" alt="">
+              <a href="https://www.audev.com" target="_blank"><img src="images/image-1.webp" class="img-fluid" alt="" style="margin-left: 25px;"></a>
+              
             </div>
           </div>
 
@@ -217,7 +219,7 @@
 
               <div style="display:flex" class="key-itemz">
                 <i class="fa-solid fa-lock services-iconz"></i>
-                <!-- <p class="secure-adminn">Centralized and secured administration</p> -->
+                <p class="secure-adminn">Centralized and secured administration</p>
               </div>
             </div>
           </aside>
@@ -297,7 +299,7 @@
           <!-- Accorion content goes in this div -->
           <div class="accordion-content">
 
-            <p>-Should be we well versed with Object Oriented Programming concepts.
+            <p class="experience-class">-Should be we well versed with Object Oriented Programming concepts.
 
               <br>-Minimum 3-4 years of experience in Java/ .Net windows applications development.
 
@@ -333,7 +335,7 @@
           </a>
           <div class="accordion-content">
 
-            <p>-Should be we well versed with Object Oriented Programming concepts.
+            <p class="experience-class">-Should be we well versed with Object Oriented Programming concepts.
 
               <br>-Minimum 1-2 years of experience in Java/ .Net windows applications development.
 
@@ -366,7 +368,7 @@
             <span class="block1" style="float: right; color:#ffffff; "><i class="ionicons ion-ios-briefcase"></i> 0 - 1 Years
               &nbsp;</span></a>
           <div class="accordion-content">
-            <p>-Should be we well versed with Object Oriented Programming concepts.
+            <p class="experience-class">-Should be we well versed with Object Oriented Programming concepts.
               <br>-Minimum 0-1 years of experience in Java/ .Net windows applications development.
               <br>-Should be ready to learn and work on BBj development stack (Refer: www.basis.com). Training
               will be provided.
@@ -397,7 +399,7 @@
             <span class="block1" style="float: right;"><i class="ionicons ion-ios-briefcase"></i> 1 - 2 Years
               &nbsp;</span></a>
           <div class="accordion-content">
-            <p>-Minimum 2 year of QA testing experience
+            <p class="experience-class">-Minimum 2 year of QA testing experience
               <br>-Experience in Agile frameworks and regression testing desired
               <br>-High attention to detail and solid analytical skills
               <br>-Proficient in test management software
@@ -770,30 +772,30 @@
             <div class="form">
               <div id="sendmessage">Your message has been sent. Thank you!</div>
               <div id="errormessage"></div>
-              <form action="https://formspree.io/f/mgedjqlv" method="post" role="form" class="contactForm">
+              <form action="https://formspree.io/f/mgedjqlv" method="post" role="form" class="contactForm" id="myform">
                 <div class="form-row">
                   <div class="form-group col-lg-6">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                    <input type="text" name="name" class="form-control text-in" id="name"  placeholder="Your Name"
                       data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                     <div class="validation"></div>
                   </div>
                   <div class="form-group col-lg-6">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                    <input type="email" class="form-control text-in" name="email" id="email"  placeholder="Your Email"
                       data-rule="email" data-msg="Please enter a valid email" />
                     <div class="validation"></div>
                   </div>
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                  <input type="text" class="form-control text-in" name="subject" id="subject"  placeholder="Subject"
                     data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                   <div class="validation"></div>
                 </div>
                 <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" data-rule="required"
-                    data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <textarea class="form-control text-in" name="message" rows="5" data-rule="required"
+                    data-msg="Please write something for us" placeholder="Message" id="message-areaa"></textarea>
                   <div class="validation"></div>
                 </div>
-                <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
+                <div class="text-center"><button onclick="changeVal(),changeEmailVal(), changeSubVal(),changeMessVal()"class="send-message"type="submit" title="Send Message">Send Message</button></div>
               </form>
             </div>
           </div>
@@ -816,10 +818,12 @@
           <div class="col-lg-2 col-md-6 footer-links width-management">
             <h4>Shortcuts</h4>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Careers</a></li>
+              <li><a href="#intro">Home</a></li>
+              <li><a href="#about">About us</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#iq-careers">Careers</a></li>
+              <li><a href="#team">Teams</a></li>
+              <li><a href="#contact">Contact Us</a></li>
               <!-- <li><a href="#">Terms of service</a></li> -->
               <!-- <li><a href="#">Privacy policy</a></li> -->
             </ul>
@@ -847,18 +851,21 @@
           <div class="col-lg-3 col-md-6 footer-contact width-management">
             <h4>Contact Us</h4>
             <p id="footer-kontent">
-              Unit No.208, <br>
-              Amfotech Business Park
+             <br>
+             Office No.602, Amfotech Business Park,
               <br>
-              Wagale Estate, Thane<br>
+              Road No.8 Wagale Indl. Estate, <br>
+              Opp. EPF Office,<br>
+              Thane(west), Pincode-400604
+              <br>
               <strong>Phone:</strong> +91 7678060779<br>
               <strong>Email:</strong> info@vitec.co.in<br>
             </p>
 
             <div class="social-links">
+              <a href="https://www.facebook.com/VivekanandTechnologies/" target="_blank"  class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
               <a href="#" class="twitter"><i class="fa-brands fa-linkedin-in"></i></a>
               <a href="#" class="google-plus"><i class="fa-brands fa-whatsapp"></i></a>
-              <a href="#" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
               <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
               <a href="#" class="linkedin"><i class="fa-brands fa-twitter"></i></a>
             </div>

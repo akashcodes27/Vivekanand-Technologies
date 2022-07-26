@@ -111,22 +111,22 @@
 
 // careers js
 function myFunction1() {
-  document.getElementById("demo1").innerHTML = "&ensp; Please share your resume with hr@synergyinfotech.in";
+  document.getElementById("demo1").innerHTML = "&ensp; Please share your resume with hr@vitec.co.in";
   var e2 = document.getElementById('demo1');
   e2.style.visibility = 'visible'
 }
 function myFunction2() {
-  document.getElementById("demo2").innerHTML = "&ensp; Please share your resume with hr@synergyinfotech.in";
+  document.getElementById("demo2").innerHTML = "&ensp; Please share your resume with hr@vitec.co.in";
   var e2 = document.getElementById('demo2');
   e2.style.visibility = 'visible'
 }
 function myFunction3() {
-  document.getElementById("demo3").innerHTML = "&ensp; Please share your resume with hr@synergyinfotech.in";
+  document.getElementById("demo3").innerHTML = "&ensp; Please share your resume with hr@vitec.co.in";
   var e2 = document.getElementById('demo3');
   e2.style.visibility = 'visible'
 }
 function myFunction4() {
-  document.getElementById("demo4").innerHTML = "&ensp; Please share your resume with hr@synergyinfotech.in";
+  document.getElementById("demo4").innerHTML = "&ensp; Please share your resume with hr@vitec.co.in";
   var e2 = document.getElementById('demo4');
   e2.style.visibility = 'visible'
 }
@@ -149,4 +149,44 @@ function myFunctionc3() {
 function myFunctionc4() {
   var el = document.getElementById('demo4');
   el.style.visibility = 'hidden'
+}
+
+
+
+
+
+// form clearing out javascript
+
+
+function changeVal(){
+  setTimeout(() => {
+    let var1=document.querySelector(".text-in");
+    var1.value="";
+    
+  }, 50);
+}
+function changeEmailVal(){
+  setTimeout(() => {
+    let var1=document.querySelector("#email");
+    var1.value="";
+    
+  }, 50);
+}
+
+function changeSubVal(){
+
+  setTimeout(() => {
+    let var1=document.querySelector("#subject");
+    var1.value="";
+    
+  }, 50);
+}
+
+function changeMessVal(){
+  
+  setTimeout(() => {
+    let var1=document.querySelector("#message-areaa");
+    var1.value="";
+    
+  }, 50);
 }
